@@ -9,7 +9,7 @@ description = "Read member records from a CSV file as typed Python objects, with
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "Your Name" }]
+authors = [{ name = "Evgenii Vorobev" }]
 keywords = ["csv", "cli", "library"]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -19,8 +19,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/csv-reader-tool"
-Issues = "https://github.com/YOUR_USERNAME/csv-reader-tool/issues"
+Homepage = "https://github.com/evgenii-vorobev/csv-reader-tool"
+Issues = "https://github.com/evgenii-vorobev/csv-reader-tool/issues"
 
 [project.scripts]
 csv-reader-tool = "csv_reader_tool.cli:main"

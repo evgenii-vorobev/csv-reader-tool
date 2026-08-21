@@ -4,7 +4,7 @@ Read member records from a CSV file as typed Python objects. Use it as a
 library inside another application, or run it as a standalone command-line
 tool.
 
-[![Tests](https://github.com/YOUR_USERNAME/csv-reader-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR_USERNAME/csv-reader-tool/actions/workflows/tests.yml)
+[![Tests](https://github.com/evgenii-vorobev/csv-reader-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/evgenii-vorobev/csv-reader-tool/actions/workflows/tests.yml)
 
 ## Features
 
@@ -19,13 +19,13 @@ tool.
 Install directly from GitHub with pip:
 
 ```bash
-pip install git+https://github.com/YOUR_USERNAME/csv-reader-tool.git
+pip install git+https://github.com/evgenii-vorobev/csv-reader-tool.git
 ```
 
 Or clone it and install in editable mode for local development:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/csv-reader-tool.git
+git clone https://github.com/evgenii-vorobev/csv-reader-tool.git
 cd csv-reader-tool
 python -m venv venv
 venv\Scripts\activate      # Windows
