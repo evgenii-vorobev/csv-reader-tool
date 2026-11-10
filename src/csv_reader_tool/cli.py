@@ -26,6 +26,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     except FileNotFoundError:
         print(f"error: file not found: {args.path}", file=sys.stderr)
         return 1
+    except OSError as exc:
+        print(f"error: cannot read file {args.path}: {exc}", file=sys.stderr)
+        return 1
     except TypeError as exc:
         print(f"error: unexpected CSV columns in {args.path}: {exc}", file=sys.stderr)
         return 1

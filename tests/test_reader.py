@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from csv_reader_tool import Member, read_members
+from csv_reader_tool.cli import main
 
 SAMPLE_CSV = Path(__file__).parent.parent / "examples" / "members_sample.csv"
 
@@ -21,3 +22,10 @@ def test_full_name_combines_first_and_last():
 def test_read_members_missing_file_raises():
     with pytest.raises(FileNotFoundError):
         list(read_members("does_not_exist.csv"))
+
+
+def test_cli_directory_input_is_a_clean_error(tmp_path, capsys):
+    assert main([str(tmp_path)]) == 1
+    err = capsys.readouterr().err
+    assert "error:" in err
+    assert "Traceback" not in err
